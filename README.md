@@ -12,7 +12,7 @@ URL: <https://www.ministryoftesting.com/events/teamwork-makes-the-full-stack-tes
 ![Agenda](slides/02-agenda.jpg)
 ![Layer Cake](slides/03-layer_cake.jpg)
 ![Layers Depth](slides/04-layers_depth.jpg)
-![Models and Where to Find Them](Slides/05-models_and_where_to_find_them.jpg)
+![Models and Where to Find Them](slides/05-models_and_where_to_find_them.jpg)
 ![System Landscape Model](slides/06-system_landscape_model.jpg)
 ![Scale of confidence](slides/07-scale_of_confidence.jpg)
 ![Mode confidence: System Context](slides/08-model_confidence_system_context.jpg)
