@@ -6,6 +6,10 @@ Masterclass first held on the 28th of November, 2023, free to attend live and th
 
 URL: <https://www.ministryoftesting.com/events/teamwork-makes-the-full-stack-testing-dream-work>
 
+## Slides
+
+![]()
+
 ## Snack Shop Diagrams
 
 ### System Landscape
@@ -30,6 +34,21 @@ URL: <https://www.ministryoftesting.com/events/teamwork-makes-the-full-stack-tes
 
 ![Single Page Application Components](diagrams/structurizr-singlePageApplicationComponents.png)
 
-## Slides
 
-![]()
+## Ben Dowen - The Full Snack Tester
+
+### Socials
+
+LinkedIn
+
+Twitter (X)
+
+Blue Sky
+
+Mastodon
+
+### Websites
+
+Testing and Quality Blog: <https//www.dowen.me.uk>
+
+Home of The Full Snack Tester: <https://fullsnacktester.com>
