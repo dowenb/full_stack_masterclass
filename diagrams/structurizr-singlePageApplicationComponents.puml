@@ -1,0 +1,27 @@
+@startuml
+set separator none
+title Store Front - Single-Page Application - Components
+
+top to bottom direction
+
+!include <C4/C4>
+!include <C4/C4_Context>
+!include <C4/C4_Container>
+!include <C4/C4_Component>
+
+Container(StoreFront.StoreWebBFF, "Store Web BFF", $techn="JavaScript and Node", $descr="Connects web applications to the backend services", $tags="", $link="")
+
+Container_Boundary("StoreFront.SinglePageApplication_boundary", "Single-Page Application", $tags="") {
+  Component(StoreFront.SinglePageApplication.BrandColours, "Brand Colours", $techn="CSS, Tailwind", $descr="Constants that define all 50 shades pink approved for brand use", $tags="", $link="")
+  Component(StoreFront.SinglePageApplication.SnackCatalog, "Snack Catalog", $techn="React Component", $descr="Make sure each snack is looking its best", $tags="", $link="")
+  Component(StoreFront.SinglePageApplication.SalesTurbo, "Sales Turbo", $techn="JavaScript", $descr="Makes items on sale really pop", $tags="", $link="")
+  Component(StoreFront.SinglePageApplication.ClickMonkey, "Click Monkey", $techn="JavaScript", $descr="Track user behavior to appease marketing team", $tags="", $link="")
+}
+
+Rel(StoreFront.SinglePageApplication.BrandColours, StoreFront.SinglePageApplication.SnackCatalog, "Display snacks in brand colours", $techn="", $tags="", $link="")
+Rel(StoreFront.SinglePageApplication.SalesTurbo, StoreFront.SinglePageApplication.BrandColours, "Add highlight for sales items", $techn="", $tags="", $link="")
+Rel(StoreFront.SinglePageApplication.ClickMonkey, StoreFront.StoreWebBFF, "Send click data", $techn="", $tags="", $link="")
+Rel(StoreFront.SinglePageApplication.SnackCatalog, StoreFront.StoreWebBFF, "Add, remove and checkout snacks", $techn="", $tags="", $link="")
+
+SHOW_LEGEND(true)
+@enduml

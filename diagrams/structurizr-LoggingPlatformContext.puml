@@ -1,0 +1,34 @@
+@startuml
+set separator none
+title Logging Platform - System Context
+
+top to bottom direction
+
+!include <C4/C4>
+!include <C4/C4_Context>
+
+AddBoundaryTag("Logging Platform", $borderColor="#cccccc", $fontColor="#cccccc", $borderStyle="Dashed", $borderThickness="1")
+Boundary(group_1, "Logging Platform", $tags="Logging Platform") {
+  System(LoggingPlatform, "Logging Platform", $descr="Store and dashboard system logs to enable observability", $tags="", $link="")
+}
+
+AddBoundaryTag("Snack Shop", $borderColor="#cccccc", $fontColor="#cccccc", $borderStyle="Dashed", $borderThickness="1")
+Boundary(group_2, "Snack Shop", $tags="Snack Shop") {
+  System(CustomerOrders, "Customer Orders", $descr="Keeps track of all new and historical orders from purchase to dispatch", $tags="", $link="")
+  System(WarehouseLogistics, "Warehouse Logistics", $descr="Manages all deliveries and stock", $tags="", $link="")
+  Person(SnackShopStaff, "Snack Shop Staff", $descr="Staff who keep the Snack Shop running to delicious effect", $tags="", $link="")
+  System(StoreFront, "Store Front", $descr="Allows customers to place and track orders for tasty treats", $tags="", $link="")
+}
+
+
+Rel(StoreFront, CustomerOrders, "Raises order", $techn="", $tags="", $link="")
+Rel(CustomerOrders, WarehouseLogistics, "Requests stock allocation", $techn="", $tags="", $link="")
+Rel(WarehouseLogistics, CustomerOrders, "Update order status", $techn="", $tags="", $link="")
+Rel(CustomerOrders, LoggingPlatform, "Log errors", $techn="", $tags="", $link="")
+Rel(StoreFront, LoggingPlatform, "Log errors", $techn="", $tags="", $link="")
+Rel(WarehouseLogistics, LoggingPlatform, "Log errors", $techn="", $tags="", $link="")
+Rel(LoggingPlatform, SnackShopStaff, "Send Alerts", $techn="", $tags="", $link="")
+Rel(SnackShopStaff, LoggingPlatform, "Read error logs", $techn="", $tags="", $link="")
+
+SHOW_LEGEND(true)
+@enduml

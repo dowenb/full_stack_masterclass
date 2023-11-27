@@ -1,0 +1,29 @@
+@startuml
+set separator none
+title Store Front - System Context
+
+top to bottom direction
+
+!include <C4/C4>
+!include <C4/C4_Context>
+
+AddBoundaryTag("Logging Platform", $borderColor="#cccccc", $fontColor="#cccccc", $borderStyle="Dashed", $borderThickness="1")
+Boundary(group_1, "Logging Platform", $tags="Logging Platform") {
+  System(LoggingPlatform, "Logging Platform", $descr="Store and dashboard system logs to enable observability", $tags="", $link="")
+}
+
+AddBoundaryTag("Snack Shop", $borderColor="#cccccc", $fontColor="#cccccc", $borderStyle="Dashed", $borderThickness="1")
+Boundary(group_2, "Snack Shop", $tags="Snack Shop") {
+  System(CustomerOrders, "Customer Orders", $descr="Keeps track of all new and historical orders from purchase to dispatch", $tags="", $link="")
+  System(StoreFront, "Store Front", $descr="Allows customers to place and track orders for tasty treats", $tags="", $link="")
+}
+
+Person(Customers, "Customers", $descr="New or returning Snack Shop Customers", $tags="", $link="")
+
+Rel(Customers, StoreFront, "Browse and purchase snacks", $techn="", $tags="", $link="")
+Rel(StoreFront, CustomerOrders, "Raises order", $techn="", $tags="", $link="")
+Rel(CustomerOrders, LoggingPlatform, "Log errors", $techn="", $tags="", $link="")
+Rel(StoreFront, LoggingPlatform, "Log errors", $techn="", $tags="", $link="")
+
+SHOW_LEGEND(true)
+@enduml

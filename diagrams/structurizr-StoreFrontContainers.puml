@@ -1,0 +1,38 @@
+@startuml
+set separator none
+title Store Front - Containers
+
+top to bottom direction
+
+!include <C4/C4>
+!include <C4/C4_Context>
+!include <C4/C4_Container>
+
+Person(Customers, "Customers", $descr="New or returning Snack Shop Customers", $tags="", $link="")
+System(CustomerOrders, "Customer Orders", $descr="Keeps track of all new and historical orders from purchase to dispatch", $tags="", $link="")
+
+System_Boundary("StoreFront_boundary", "Store Front", $tags="") {
+  AddBoundaryTag("Mobile", $borderColor="#cccccc", $fontColor="#cccccc", $borderStyle="Dashed", $borderThickness="1")
+  Boundary(group_1, "Mobile", $tags="Mobile") {
+    Container(StoreFront.MobileApplication, "Mobile Application", $techn="React Native", $descr="Allows snacks to be viewed on mobile phones", $tags="", $link="")
+    Container(StoreFront.StoreMobileBFF, "Store Mobile BFF", $techn="JavaScript and Node", $descr="Connects  mobile applications to the backend services", $tags="", $link="")
+  }
+
+  AddBoundaryTag("Web", $borderColor="#cccccc", $fontColor="#cccccc", $borderStyle="Dashed", $borderThickness="1")
+  Boundary(group_2, "Web", $tags="Web") {
+    Container(StoreFront.SinglePageApplication, "Single-Page Application", $techn="React", $descr="Displays the range of available snacks", $tags="", $link="")
+    Container(StoreFront.StoreWebBFF, "Store Web BFF", $techn="JavaScript and Node", $descr="Connects web applications to the backend services", $tags="", $link="")
+  }
+
+}
+
+Rel(Customers, StoreFront.MobileApplication, "Purchase snacks", $techn="", $tags="", $link="")
+Rel(Customers, StoreFront.SinglePageApplication, "Purchase snacks", $techn="", $tags="", $link="")
+Rel(StoreFront.SinglePageApplication, StoreFront.StoreWebBFF, "Send click data", $techn="", $tags="", $link="")
+Rel(StoreFront.SinglePageApplication, StoreFront.StoreWebBFF, "Create order", $techn="", $tags="", $link="")
+Rel(StoreFront.StoreWebBFF, CustomerOrders, "Raises order", $techn="", $tags="", $link="")
+Rel(StoreFront.MobileApplication, StoreFront.StoreMobileBFF, "Create order", $techn="", $tags="", $link="")
+Rel(StoreFront.StoreMobileBFF, CustomerOrders, "Raises order", $techn="", $tags="", $link="")
+
+SHOW_LEGEND(true)
+@enduml
