@@ -8,7 +8,24 @@ URL: <https://www.ministryoftesting.com/events/teamwork-makes-the-full-stack-tes
 
 ## Slides
 
-![]()
+![Intro](slides/01-intro.jpg)
+![Agenda](slides/02-agenda.jpg)
+![Layer Cake](slides/03-layer_cake.jpg)
+![Layers Depth](slides/04-layers_depth.jpg)
+![Models and Where to Find Them](Slides/05-models_and_where_to_find_them.jpg)
+![System Landscape Model](slides/06-system_landscape_model.jpg)
+![Scale of confidence](slides/07-scale_of_confidence.jpg)
+![Mode confidence: System Context](slides/08-model_confidence_system_context.jpg)
+![Mode confidence: Containers](slides/09-model_confidence_containers.jpg)
+![Mode confidence: Components](slides/10-model_confidence_components.jpg)
+![Gain confidence](slides/11-gain_confidence.jpg)
+![UI Test Ideas](slides/12-ui_testing.jpg)
+![Application Test Ideas](slides/13-application_testing.jpg)
+![Persistence Test Ideas](slides/14-persistence_testing.jpg)
+![Dat Test Ideas](slides/15-infra_testing.jpg)
+![Team Learning](slides/16-team_learning.jpg)
+![Summary](slides/17-summary.jpg)
+![Thank you](slides/18-thank_you.jpg)
 
 ## Snack Shop Diagrams
 
@@ -39,13 +56,13 @@ URL: <https://www.ministryoftesting.com/events/teamwork-makes-the-full-stack-tes
 
 ### Socials
 
-LinkedIn
+LinkedIn: <https://www.linkedin.com/in/dowenb/>
 
-Twitter (X)
+Twitter (X): <https://twitter.com/FullSnackTester>
 
-Blue Sky
+Blue Sky <https://bsky.app/profile/fullsnacktester.bsky.social>
 
-Mastodon
+Mastodon: <https://sw-development-is.social/web/@fullsnacktester>
 
 ### Websites
 
