@@ -86,6 +86,9 @@ Links:
 
 ![Team Learning](slides/16-team_learning.jpg)
 
+Links:
+* [https://www.dowen.me.uk/posts/successful-collaborative-testing-sessions/](https://www.dowen.me.uk/posts/successful-collaborative-testing-sessions/)
+
 ![Summary](slides/17-summary.jpg)
 
 Background image: Photo by Nitin Dhumal: <https://www.pexels.com/photo/red-lens-sunglasses-on-sand-near-sea-at-sunset-selective-focus-photography-46710/>
@@ -117,7 +120,8 @@ Background image: Photo by [Jon Tyson](https://unsplash.com/@jontyson?utm_conten
 
 ![Single Page Application Components](diagrams/structurizr-singlePageApplicationComponents.png)
 
-
+Links:
+* [https://github.com/dowenb/full_stack_masterclass(https://github.com/dowenb/full_stack_masterclass)]
 ## Ben Dowen - The Full Snack Tester
 
 ### Socials
