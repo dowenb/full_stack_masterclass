@@ -6,6 +6,22 @@ Masterclass first held on the 28th of November, 2023, free to attend live and th
 
 URL: <https://www.ministryoftesting.com/events/teamwork-makes-the-full-stack-testing-dream-work>
 
+## Resource links
+
+* [https://www.fullsnacktester.com/](https://www.fullsnacktester.com/)
+* [https://www.dowen.me.uk/](https://www.dowen.me.uk/)
+* [https://www.dowen.me.uk/posts/what-makes-up-a-software-stack/](https://www.dowen.me.uk/posts/what-makes-up-a-software-stack/)
+* [https://www.ibm.com/topics/three-tier-architecture](https://www.ibm.com/topics/three-tier-architecture)
+* [https://c4model.com/](https://c4model.com/)
+* [https://www.dowen.me.uk/posts/building-your-toolbox-and-sharpening-your-tools/](https://www.dowen.me.uk/posts/building-your-toolbox-and-sharpening-your-tools/)
+* [https://www.dowen.me.uk/posts/05-ways-testing-mobile-is-different-from-web/](https://www.dowen.me.uk/posts/05-ways-testing-mobile-is-different-from-web/)
+* [https://testautomationu.applitools.com/exploring-service-apis-through-test-automation/](https://testautomationu.applitools.com/exploring-service-apis-through-test-automation/)
+* [Understanding SQL with Lego - The Complete collection - (Lee the Pirate Tester)](https://www.youtube.com/watch?v=WbvNiwMEAmk)
+* [https://www.ministryoftesting.com/testbash-talks/why-we-should-test-programmable-infrastructure-matt-long](https://www.ministryoftesting.com/testbash-talks/why-we-should-test-programmable-infrastructure-matt-long)
+* [https://www.dowen.me.uk/posts/successful-collaborative-testing-sessions/](https://www.dowen.me.uk/posts/successful-collaborative-testing-sessions/)
+* [https://github.com/dowenb/full_stack_masterclass](https://github.com/dowenb/full_stack_masterclass)
+
+
 ## Slides
 
 ![Intro](slides/01-intro.jpg)
@@ -55,7 +71,7 @@ Background image: Photo by Pixabay: <https://www.pexels.com/photo/blue-tape-meas
 Background image: Photo by Andrea Piacquadio: <https://www.pexels.com/photo/strict-female-teacher-with-book-pointing-at-scribbled-blackboard-3771074/>
 
 Links:
-* https://www.dowen.me.uk/posts/building-your-toolbox-and-sharpening-your-tools/
+* [https://www.dowen.me.uk/posts/building-your-toolbox-and-sharpening-your-tools/](https://www.dowen.me.uk/posts/building-your-toolbox-and-sharpening-your-tools/)
 
 ![UI Test Ideas](slides/12-ui_testing.jpg)
 
@@ -76,7 +92,8 @@ Links:
 Background image: Photo by Ragul Ebinezar on Unsplash
 
 Links:
-* [https://www.youtube.com/watch?v=WbvNiwMEAmk](https://www.youtube.com/watch?v=WbvNiwMEAmk)
+* [Understanding SQL with Lego - The Complete collection - (Lee the Pirate Tester](https://www.youtube.com/watch?v=WbvNiwMEAmk)
+
 ![Infra Test Ideas](slides/15-infra_testing.jpg)
 
 Background image: Photo by Ragul Ebinezar on Unsplash
@@ -92,6 +109,9 @@ Links:
 ![Summary](slides/17-summary.jpg)
 
 Background image: Photo by Nitin Dhumal: <https://www.pexels.com/photo/red-lens-sunglasses-on-sand-near-sea-at-sunset-selective-focus-photography-46710/>
+
+Links:
+* [https://github.com/dowenb/full_stack_masterclass](https://github.com/dowenb/full_stack_masterclass)
 
 ![Thank you](slides/18-thank_you.jpg)
 
@@ -120,8 +140,6 @@ Background image: Photo by [Jon Tyson](https://unsplash.com/@jontyson?utm_conten
 
 ![Single Page Application Components](diagrams/structurizr-singlePageApplicationComponents.png)
 
-Links:
-* [https://github.com/dowenb/full_stack_masterclass(https://github.com/dowenb/full_stack_masterclass)]
 ## Ben Dowen - The Full Snack Tester
 
 ### Socials
